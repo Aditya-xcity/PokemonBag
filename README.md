@@ -2,7 +2,7 @@
 
 ## 🔄 Loading Screen Preview
 
-![Loading Screen](Demo.gif)
+![Demo Gif](Demo.gif)
 
 
 
@@ -90,5 +90,6 @@ Pokémon and all related names, sprites, and assets are trademarks of
 Nintendo / Game Freak / The Pokémon Company.
 
 This project is created purely for learning and portfolio purposes.
+
 
 
