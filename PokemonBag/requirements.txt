@@ -3,4 +3,6 @@ requests
 pokebase
 pypokedex
 Pillow
+gunicorn
+
 
