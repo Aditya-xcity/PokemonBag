@@ -1,5 +1,11 @@
 # Pokémon Bag 
 
+## 🔄 Loading Screen Preview
+
+![Loading Screen](Demo.gif)
+
+
+
 A Pokémon FireRed-style Bag system built using **Flask**, **HTML**, **CSS**, and **JavaScript**.
 This project recreates the in-game bag UI with items, categories, sounds, and keyboard navigation.
 
@@ -84,4 +90,5 @@ Pokémon and all related names, sprites, and assets are trademarks of
 Nintendo / Game Freak / The Pokémon Company.
 
 This project is created purely for learning and portfolio purposes.
+
 
