@@ -16,12 +16,9 @@
 # This file is responsible for starting the development server
 # when the application is run directly.
 
-
-
 from flask import Flask, render_template
 from routes.bag_routes import bag_bp
 import config
-import os
 
 def create_app():
     app = Flask(
@@ -30,13 +27,10 @@ def create_app():
         template_folder="templates"
     )
 
-    # Load config if needed later
     app.config.from_object(config)
 
-    # Register blueprints
     app.register_blueprint(bag_bp)
 
-    # ---------------- PAGES ----------------
     @app.route("/")
     def bag_page():
         return render_template("bag.html")
@@ -44,6 +38,9 @@ def create_app():
     return app
 
 
+#new line
+app = create_app()
+
+
 if __name__ == "__main__":
-    app = create_app()
     app.run(debug=True)
