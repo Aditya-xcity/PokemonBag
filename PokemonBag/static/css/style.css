@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+/* ===============================
+   RESET
+   =============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===============================
+   PAGE
+   =============================== */
+body {
+    min-height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Press Start 2P", monospace;
+}
+
+/* ===============================
+   UI BOARD WRAPPER
+   =============================== */
+.ui-wrapper {
+    position: relative;
+    width: 90vw;
+    max-width: 1280px;
+    aspect-ratio: 16 / 9;
+}
+
+/* ===============================
+   UI BOARD IMAGE
+   =============================== */
+.ui-board {
+    width: 100%;
+    height: 100%;
+    display: block;
+    image-rendering: pixelated;
+}
+
+/* ===============================
+   TITLE
+   =============================== */
+.ui-title {
+    position: absolute;
+    top: 9%;
+    left: 20%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    color: #ffffff;
+    text-shadow: 2px 2px 0 #000;
+}
+
+/* ===============================
+   BAG IMAGE
+   =============================== */
+.bag-image {
+    position: absolute;
+    left: 6%;
+    top: 23%;
+    width: 300px;
+    image-rendering: pixelated;
+}
+
+/* ===============================
+   ITEM LIST
+   =============================== */
+.item-list {
+    position: absolute;
+    right: 25%;
+    top: 10%;
+    width: 34%;
+    height: 51%;
+    list-style: none;
+    background: transparent;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.item-list li.active {
+    background: rgba(34, 197, 94, 0.9);
+    color: #000;
+}
+
+.item-list li {
+    padding: 6px;
+    cursor: pointer;
+    color: #000000;
+    transition: background 0.08s linear;
+}
+
+
+
+
+.item-list li:hover {
+    background: rgba(34, 197, 94, 0.85);
+    color: #000;
+}
+
+.item-list {
+    user-select: none;
+}
+
+
+/* ===============================
+   ITEM INFO (ANCHOR BLOCK)
+   =============================== */
+.item-info {
+    position: absolute;
+    left: 0%;
+    bottom: 3%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+/* ===============================
+   ICON COLUMN (FIXED)
+   =============================== */
+.icon-box {
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ICON IMAGE */
+.item-icon {
+    width: 120px;
+    height: 120px;
+    image-rendering: pixelated;
+    transition: transform 0.15s ease;
+}
+
+.item-icon:not(.hidden) {
+    transform: scale(1.05);
+}
+
+/* ===============================
+   DESCRIPTION COLUMN (MOVABLE)
+   =============================== */
+.description-box {
+    flex: 1;
+    margin-top: 28px;   /* ⬇ move TEXT down independently */
+}
+
+/* DESCRIPTION TEXT */
+#itemText {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #d1fae5;
+}
+
+
+
+/* ===============================
+   BUTTONS
+   =============================== */
+/* .bag-buttons {
+    position: absolute;
+    bottom: 35%;
+    left: 18%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 19px;
+}
+.bag-buttons button {
+    padding: 10px 8px;
+    font-size: 10px;
+    font-family: "Press Start 2P", monospace;
+    background: #4ade80;
+    border: 4px solid #000;
+    cursor: pointer;
+}
+
+.bag-buttons button:hover {
+    background: #22c55e;
+}
+
+.bag-buttons button:active {
+    transform: translateY(2px);
+} */
+
+/* ===============================
+   UTIL
+   =============================== */
+.hidden {
+    display: none;
+}

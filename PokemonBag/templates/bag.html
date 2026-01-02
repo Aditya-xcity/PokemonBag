@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}Pokémon Bag{% endblock %}
+
+{% block content %}
+
+
+
+<div class="ui-wrapper">
+
+    <!-- UI BOARD IMAGE -->
+    <img
+        src="{{ url_for('static', filename='images/background/bg.png') }}"
+        class="ui-board"
+        alt="UI Board"
+    >
+
+    <!-- TITLE -->
+  <h1 id="bagTitle" class="ui-title">ITEMS POCKET</h1>
+
+
+    <!-- BAG IMAGE -->
+    <img
+        id="bagImage"
+        src="{{ url_for('static', filename='images/bag/Closed.png') }}"
+        class="bag-image"
+        alt="Bag"
+    >
+
+    <!-- ITEM LIST -->
+    <ul id="itemList" class="item-list">
+        <li class="placeholder">Select a category</li>
+    </ul>
+
+<!-- ITEM INFO -->
+<div class="item-info">
+
+    <!-- ICON AREA -->
+    <div class="icon-box">
+        <img id="itemIcon" class="item-icon hidden" alt="">
+    </div>
+
+    <!-- DESCRIPTION AREA -->
+    <div class="description-box">
+        <p id="itemText">Select an item to see its description.</p>
+    </div>
+
+</div>
+
+    <!-- BUTTONS -->
+    <div class="bag-buttons">
+        <button data-category="Items">ITEMS</button>
+        <button data-category="Balls">BALLS</button>
+        <button data-category="Key Items">KEY ITEMS</button>
+        <button id="muteBtn">MUTE</button>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/bag.js') }}"></script>
+{% endblock %}

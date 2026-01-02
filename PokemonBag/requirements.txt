@@ -1,0 +1,6 @@
+Flask
+requests
+pokebase
+pypokedex
+Pillow
+playsound
